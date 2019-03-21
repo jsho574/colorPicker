@@ -15,6 +15,8 @@ class ColorPickerViewController: UIViewController {
         var UI = UIColor.white
     }
     
+    var colorNum = 0
+    
     var colorsA: [Colors] = []
    // var colorsA: [Colors] = [(color: "red", UI: UIColor.red)]
    // var color1: Colors = Colors(color: "red", UI: UIColor.red)
@@ -38,9 +40,13 @@ class ColorPickerViewController: UIViewController {
         colorsA.append(Colors(color: "Purple", UI: UIColor.purple))
         ColorPickerView.dataSource = self
         ColorPickerView.delegate = self
+        //colorNum = 
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    //switch colorV
 
     /*
     // MARK: - Navigation
@@ -73,7 +79,8 @@ extension ColorPickerViewController: UIPickerViewDelegate, UIPickerViewDataSourc
         return colorsA[row].color
     }
     
-    private func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIColor {
+    /*func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int) -> UIColor {
         return colorsA[row].UI
-    }
+    } */
+
 }

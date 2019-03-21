@@ -18,20 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMv-ju-lAT">
-                                <rect key="frame" x="166" y="383" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMv-ju-lAT">
+                                <rect key="frame" x="166" y="390" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-KX-xQM">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-KX-xQM">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gdS-KX-xQM" secondAttribute="trailing" id="GTa-D4-htm"/>
+                            <constraint firstItem="gdS-KX-xQM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dNf-7O-ylW"/>
+                            <constraint firstItem="VMv-ju-lAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="g00-st-Zij"/>
+                            <constraint firstItem="VMv-ju-lAT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lHr-W0-kca"/>
+                            <constraint firstItem="VMv-ju-lAT" firstAttribute="centerX" secondItem="gdS-KX-xQM" secondAttribute="centerX" id="mi6-ga-bjn"/>
                             <constraint firstItem="gdS-KX-xQM" firstAttribute="top" secondItem="VMv-ju-lAT" secondAttribute="bottom" constant="40" id="mz2-1w-rZi"/>
+                            <constraint firstItem="gdS-KX-xQM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="urZ-bp-eCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
